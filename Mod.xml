@@ -2,14 +2,15 @@
 	<PropertyGroup>
 		<Name>DecO'Clock</Name>
 		<ModId>decoclock</ModId>
-		<Version>0.9.4</Version>
+		<Version>0.10.0</Version>
 		<Authors>Svarozhich</Authors>
-		<GameVersion>1.20.0-rc.1</GameVersion>
+		<GameVersion>1.20.7</GameVersion>
+		<MinimalGameVersion>1.20.0</MinimalGameVersion>
 		<Description>Adds to the game several types of mechanical clocks showing the current game time</Description>
-    <NoLang>True</NoLang>
+		<NoLang>true</NoLang>
 		<Website></Website>
 	</PropertyGroup>
-	<ItemGroup>		
+	<ItemGroup>
 		<IncludeFiles Include="modicon.png" />
 		<IncludeFiles Include="LICENSE" />
 		<IncludeFiles Include="README.md" />
