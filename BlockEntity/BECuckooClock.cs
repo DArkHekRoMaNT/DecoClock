@@ -96,7 +96,7 @@ namespace DecoClock
             capi.Event.RegisterRenderer(rendererCuckooClock =
                new(capi, Pos), EnumRenderStage.Opaque);
             rendererCuckooClock.MinuteTick += () => { if (!MuteSounds) TickSound?.Start(); };
-            rendererCuckooClock.HourTick += (_) => {  if (!MuteSounds && rendererCuckoo.Cu) cuckooSound?.Start(); };
+            rendererCuckooClock.HourTick += (_) => { if (!MuteSounds && rendererCuckoo.TryCu()) cuckooSound?.Start(); };
         }
 
         public override void OnBlockRemoved()

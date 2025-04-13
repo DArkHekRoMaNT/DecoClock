@@ -21,7 +21,6 @@ namespace DecoClock
         float timeAnimation = 0;
         public double RenderOrder => 0.5;
         public int RenderRange => 24;
-        public bool Cu => cuckoo != null;
 
         public void OnRenderFrame(float deltaTime, EnumRenderStage stage)
         {
@@ -152,6 +151,14 @@ namespace DecoClock
             }
         }
 
+        public bool TryCu()
+        {
+            if (cuckoo == null)
+                return false;
+
+            cu = true;
+            return true;
+        }
 
         public void Dispose()
         {
